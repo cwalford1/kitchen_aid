@@ -1,0 +1,8 @@
+[MASTER]
+
+disable=
+    C0114, # missing-module docstring (handled by interrogate)
+    C0115, # missing-class-docstring
+    C0116, # missing-function-docstring
+    C0301, # line-too-long (handled by black, afterward, only unbroken strings/comments will be too long, and we don't need to go back and add newlines to these.)
+    C0330, C0326, # (wrong-hanging-indentation-before-block) and (bad-whitespace) both can poss

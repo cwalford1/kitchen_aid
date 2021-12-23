@@ -1,0 +1,18 @@
+
+[project]
+name = "irrigation"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+[tool.interrogate]
+exclude = ['teams.py']
+verbose = 1
+ignore-init-method = true
+ignore-init-module = true
+ignore-property-decorators = true
+ignore-setters = true
+
+[tool.isort]
+profile=black

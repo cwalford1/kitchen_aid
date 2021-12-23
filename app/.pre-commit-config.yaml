@@ -1,0 +1,33 @@
+exclude: ""
+repos:
+- repo: https://github.com/psf/black
+  rev: 21.11b1
+  hooks:
+  - id: black
+    name: black
+    description: "Black: The uncompromising Python code formatter"
+    entry: black
+    language: python
+    language_version: python3.7.3
+    minimum_pre_commit_version: 2.9.2
+    require_serial: true
+    types_or: [python, pyi]
+
+- repo: https://github.com/PyCQA/isort
+  rev: 5.10.1
+  hooks:
+    - id: isort
+- repo: https://github.com/econchick/interrogate
+  rev: 1.5.0
+  hooks:
+    - id: interrogate
+      args: [--fail-under=100]
+- repo: https://github.com/PyCQA/pylint
+  rev: v2.12.1
+  hooks:
+  - id: pylint
+    name: pylint
+    entry: pylint
+    language: system
+    types: [python]
+    args: [--rcfile=.pylintrc,]

@@ -1,6 +1,6 @@
 
 [project]
-name = "irrigation"
+name = "kitchen_aid"
 
 [tool.black]
 line-length = 88
@@ -15,4 +15,4 @@ ignore-property-decorators = true
 ignore-setters = true
 
 [tool.isort]
-profile=black
+profile="black"

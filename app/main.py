@@ -25,7 +25,7 @@ ROW_DATA = [
     5,
     )
 ]
-
+""
 
 class MainApp(MDApp):
     def build(self):
